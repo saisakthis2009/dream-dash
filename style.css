@@ -1,0 +1,139 @@
+
+/* GENERAL RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    color: white;
+    text-align: center;
+    padding: 35px 15px;
+
+    background:
+        radial-gradient(circle at 15% 20%, #49247d 0%, transparent 35%),
+        radial-gradient(circle at 85% 80%, #243b80 0%, transparent 35%),
+        linear-gradient(135deg, #09051e, #160b36, #08051c);
+}
+
+/* HEADER */
+header {
+    margin-bottom: 28px;
+}
+
+h1 {
+    font-size: clamp(34px, 5vw, 52px);
+    letter-spacing: 5px;
+    color: #e9d5ff;
+    margin-bottom: 12px;
+
+    text-shadow:
+        0 0 10px #a855f7,
+        0 0 25px #9333ea;
+}
+
+header p {
+    color: #c4b5fd;
+    font-size: 16px;
+}
+
+/* MAIN GAME PANEL */
+main {
+    width: min(900px, 95%);
+    margin: auto;
+    padding: 28px;
+
+    background: rgba(30, 20, 65, 0.92);
+    border: 1px solid #7653bb;
+    border-radius: 22px;
+
+    box-shadow:
+        0 0 25px rgba(147, 51, 234, 0.25),
+        0 15px 40px rgba(0, 0, 0, 0.4);
+}
+
+/* GAME INFORMATION */
+.game-info h2 {
+    color: #e9d5ff;
+    font-size: 24px;
+    margin-bottom: 8px;
+}
+
+.game-info p {
+    color: #c4b5fd;
+    margin-bottom: 20px;
+}
+
+/* GAME CANVAS */
+canvas {
+    display: block;
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    margin: auto;
+
+    background: #10082e;
+    border: 2px solid #a78bfa;
+    border-radius: 14px;
+
+    box-shadow:
+        0 0 15px rgba(167, 139, 250, 0.4),
+        inset 0 0 25px rgba(124, 58, 237, 0.2);
+}
+
+/* SCORE */
+.score-board {
+    margin: 22px 0;
+}
+
+#score {
+    color: #67e8f9;
+    font-size: 25px;
+    text-shadow: 0 0 12px #06b6d4;
+}
+
+/* RESTART BUTTON */
+button {
+    background: linear-gradient(135deg, #9333ea, #6d28d9);
+    color: white;
+    border: 1px solid #c4b5fd;
+    padding: 13px 30px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+
+    box-shadow: 0 0 15px rgba(147, 51, 234, 0.4);
+    transition: 0.2s;
+}
+
+button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 0 25px rgba(192, 132, 252, 0.7);
+}
+
+/* FOOTER */
+footer {
+    margin-top: 24px;
+    color: #c4b5fd;
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+
+/* MOBILE RESPONSIVENESS */
+@media (max-width: 600px) {
+    body {
+        padding: 20px 8px;
+    }
+
+    main {
+        padding: 14px;
+    }
+
+    h1 {
+        letter-spacing: 3px;
+    }
+}
